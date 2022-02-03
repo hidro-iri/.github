@@ -1,4 +1,4 @@
-# Eagle
+# HIgh Dynamics RObotics group 👋
 
 This Github page aims at being the entry gate to the work done at the HiDRo group. It contains documentation and software package to work with the existing robots at our lab.
 
