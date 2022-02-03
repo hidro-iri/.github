@@ -4,4 +4,4 @@ This Github page aims at being the entry gate to the work done at the HiDRo grou
 
 | Aerial Manipulation - Eagle  | Qaudrupeds |
 | -  | - |
-| <a href="../eagle/README.md"><img src="../img/borinot.jpg" width="350"></a>| <a href="../solo/README.md"><img src="../img/solo.png" width="350"></a> |
+| <a href="/eagle/README.md"><img src="/img/borinot.jpg" width="350"></a>| <a href="/solo/README.md"><img src="/img/solo.png" width="350"></a> |
