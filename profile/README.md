@@ -1,7 +1,5 @@
-# HIgh Dynamics RObotics group 👋
+# Eagle
 
-This Github page aims at being the entry gate to the work done at the HiDRo group. It contains documentation and software package to work with the existing robots at our lab.
-
-| Aerial Manipulation - Eagle  | Qaudrupeds |
-| -  | - |
-| <a href="/eagle/README.md"><img src="/img/borinot.jpg" width="350"></a>| <a href="/solo/README.md"><img src="/img/solo.png" width="350"></a> |
+| Procedures | Software | Hardware |
+| -  | - | - |
+| <a href="/eagle/procedures/README.md"><img src="/img/procedures.png" width="350"></a> | <a href="/eagle/software/README.md"><img src="/img/cpp.png" width="350"></a> | <a href="/eagle/hardware/README.md"><img src="/img/borinot.jpg" width="350"></a> |
