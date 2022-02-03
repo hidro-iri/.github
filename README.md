@@ -1,2 +1,2 @@
-# hidro-iri
-Entry gate to the Hidro world
+# Hidro Group
+There are a bunch of repos in this organization site. Here 
