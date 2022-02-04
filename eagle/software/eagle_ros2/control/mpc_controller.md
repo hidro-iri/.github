@@ -2,20 +2,20 @@
 This node incorporates functionalities to interact with the UAM by using the `eagle_mpc::ControlManager` object. This object is in charge of ensuring a continuous operation of the UAM using MPC controllers (see diagram below).
 
 What the node **DOES NOT** do:
-- To manage the MPC controllers or any other algorithmic issue related to the MPC algorithm. This is left for the class [`eagle_mpc::ControlManager`](https://github.com/PepMS/eagle_mpc_devs/blob/ball_interception/src/controller-manager.cpp).
+- To manage the MPC controllers or any other algorithmic issue related to the MPC algorithm. This is left for the class [`eagle_mpc::ControlManager`](https://github.com/hidro-iri/eagle_mpc_lib/blob/devel/include/eagle_mpc/controller-manager.hpp).
 
 What the node **DOES**:
 - To address the robot's state data coming both from PX4 and the ODRI master board.
 - To address the actuator's commands computed by the `eagle_mpc::ControlManager` to the corresponding actuator topics/drivers.
 - To manage a state machine to safely operate the UAM.
 
-You can skip the implementation details and go directly to the [practical details](#operation) about how to operate a UAM with this node.
+You can skip the implementation details and go directly to the [practical details](#2-operation) about how to operate a UAM with this node.
 
 ## 1 Architecture
 
 Let us explain its functionality with the help of the diagram below:
 
-<img src="../img/ctrl_mgr_interface.png" alt="Node structure" align="center"/>
+<img src="img/ctrl_mgr_interface.png" alt="Node structure" align="center"/>
 
 ### 1.1 State machine
 
@@ -61,22 +61,22 @@ These are the `callback_groups`:
 ### 2.1 Build with the appropriate messages
 To run this node you should first have compiled the `PX4-Autopilot` and the `px4_ros_com` by using the messges in `px4_control_msgs.yaml` and `ros2_control_msgs.yaml`, respectively.
 
-[Build procedure](../procedures/build.md)
+[Build procedure](../README.md#2-build)
 
 ### 2.2 Launch the required systems
 Launch all required systems so you are in disposal of launching this node.
 
-[Launch procedure](../procedures/preflight.md)
+[Launch procedure](../../../procedures/preflight.md)
 
 ### 2.3 Enable control manager
 
-```
-ros2 service call /controller_mgr_interface/state_transition eagle_mpc_2_interfaces/srv/TransitionCommand "{command: enable}"
+```console
+foo@bar:~$ ros2 service call /controller_mgr_interface/state_transition eagle_mpc_2_interfaces/srv/TransitionCommand "{command: enable}"
 ```
 
 ### 2.4 Publish GoTo command
-```
-ros2 topic pub -1 /goto_command eagle_mpc_2_interfaces/msg/GoToCmd "{platform_pos:{x: 0, y: 0, z: 2}, platform_yaw: 90, time: 2500}"
+```console
+foo@bar:~$ ros2 topic pub -1 /goto_command eagle_mpc_2_interfaces/msg/GoToCmd "{platform_pos:{x: 0, y: 0, z: 2}, platform_yaw: 90, time: 2500}"
 ```
 > ℹ️**INFO**: You should execute this command before the armed PX4 times out. If this happens, ¡you will have to enable the controller manager to launch this command again.
 
