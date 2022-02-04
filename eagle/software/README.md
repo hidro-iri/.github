@@ -1,6 +1,12 @@
 # Eagle - Software
 
-Below there is a list of software related to the operation of UAMs. Click on each one of them to know how to install and how to build it.
+Below there is a list of software related to the operation of UAMs. Click on each one of them to know more.
+
+> :information_source: **NOTE**::information_source:
+> 
+> **Installation & Build** instructions: are places in the each repository's README file 
+> 
+> **Other information**: other information related such as, e.g, the architecture of the software is unified inside this documentation repository.
 
 ## 1. [eagle_mpc_lib](eagle_mpc_lib/README.md)
 
@@ -10,8 +16,8 @@ Low level C++ library to apply Model Predictive Control techniques to aerial man
 
 ROS2 library containing several ROS2 packages to operate with UAMs.
 
-## 3. [PX4 Eagle](px4/README.md)
+## 3. [PX4-Autopilot](px4/README.md)
 
-Forked of the very popular firmware for flight controllers.
+Fork of the very popular firmware for flight controllers.
 
 [Back to Eagle](../README.md)
