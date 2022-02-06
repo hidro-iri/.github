@@ -1,4 +1,4 @@
-# EagleMPC ROS2: Control
+# Eagle ROS2: Control
 
 This package contains different nodes that allow to interact with the UAM. There are some basic nodes that can be used to test more advanced control architectures.
 
@@ -11,24 +11,31 @@ The EagleMPC-ROS2 control package has several abstract (or base) classes. These,
 This package contains these pieces implemented as abstract classes. The idea is to build our final control architecture inheriting from the ones that we need. In the following, there is a small explanation of each one of them.
 
 ### 1.1 State subscriber & publisher
+This node subscribes to different topics containing the state of the robot and publishes the state in one single message. All the callback sbelong to a `callback_group` to ease the running of this node (and its eventual derived ones) on a `MultithreadExecutor`.
 
-This node subscribes to different topics containing the state of the robot and publishes the state in one single message.
+Even being a base class, it can still be run as a stand-alone node. The steps to get this node running in simulation are the following:
 
-Even being a base class, it can still be run as a stand-alone node:
+> :information_source: To gain insight into the detailed launching procedure [go here](../../../procedures/preflight.md). This procedure is automatized by means of ROS2 launch files.
 
-1. Enable the PX4 state publication through ROS2. [As described here](../../../procedures/preflight.md).
-
-2. Run the following command:
-
+1. Start the PX4 simulation:
+```console
+foo@bar:~/$ cd <path-to-px4-autopilot>
+foo@bar:<path-to-px4-autopilot>/$ make px4_sitl_rtps gazebo
 ```
-ros2 launch eagle_mpc_2_control state_publisher.py
+2. In a second terminal, source your ROS2 workspace and run the following command:
+```console
+foo@bar:<path-to-ros2-ws>/$ ros2 launch eagle_ros2_control state_pub_sub.launch.py
+```
+3. In a third, confirm that the state is being published as a single message:
+```console
+foo@bar:<path-to-ros2-ws>/$ ros2 topic echo /platform_state
 ```
 
 ### 1.2 Base controller
 
-This provides the basic functionality to write commands to the UAM actuators (thrust and torque). It is built a an pure virtual class. As such, it must be derived in a separate class so that it can be used.
+This provides the basic functionality to write commands to the UAM actuators (thrust and torque). It is built as a pure virtual class. As such, it must be derived in a separate class so that it can be used.
 
-It has only one pure virtual function called `computeControls()`, which is where the derived classes will call the control algorithms to get the controls for the robot. This is called in its own callback group and, therefore, it is easy to assign an own thread when doing the final node executor. This function is called at fixed rate, specified by a parameter (*to be done, since now it is fixed at 4ms*).
+It has only one pure virtual function called `computeControls()`, which is where the derived classes will call the control algorithms to get the controls for the robot. This is called in its own callback group and, therefore, it is easy to assign an own thread when doing the final node executor. This function is called at fixed rate, specified by a parameter.
 
 Since it is a pure virtual class, it cannot be launched as a standalone application.
 
@@ -36,7 +43,7 @@ Since it is a pure virtual class, it cannot be launched as a standalone applicat
 
 Generally, to have an operating robot, we need to go through different launch procedures. In these, we make sure that every single subsystem is properly initialized. To ease these procedure we have implemented an abstract class containing a state machine.
 
-<img src="../img/state_machine_interface.png" alt="Node structure" align="center"/>
+<img src="img/state_machine_interface.png" alt="Node structure" align="center"/>
 
 **FINISH EXPLANATION!**
 
@@ -51,9 +58,5 @@ This is a node to control separately the flying platform and the robotic arm of 
 
 [See here](decentralized_controller.md) for more info.
 
-### 2.3 Motor test
-There are two nodes with the purpose to test the motor in, e.g., the test bench. This is specially useful when our goal is to run an identification algorithm for a motor-propeller set.
-
-#### 2.3.1 Motor test profile
 
 [Back to Eagle MPC - ROS2](../README.md)

@@ -64,20 +64,23 @@ To run this node you should first have compiled the `PX4-Autopilot` and the `px4
 [Build procedure](../README.md#2-build)
 
 ### 2.2 Launch the required systems
-Launch all required systems so you are in disposal of launching this node.
 
-[Launch procedure](../../../procedures/preflight.md)
-
-### 2.3 Enable control manager
-
+1. Start the PX4 simulation:
 ```console
-foo@bar:~$ ros2 service call /controller_mgr_interface/state_transition eagle_mpc_2_interfaces/srv/TransitionCommand "{command: enable}"
+foo@bar:~/$ cd <path-to-px4-autopilot>
+foo@bar:<path-to-px4-autopilot>/$ make px4_sitl_rtps gazebo
 ```
-
-### 2.4 Publish GoTo command
+2. In a second terminal, source your ROS2 workspace and run the following command:
+```console
+foo@bar:<path-to-ros2-ws>/$ ros2 launch eagle_ros2_control mpc_controller.launch.py
+```
+3. In a third termimal, publish a GoTo command:
 ```console
 foo@bar:~$ ros2 topic pub -1 /goto_command eagle_mpc_2_interfaces/msg/GoToCmd "{platform_pos:{x: 0, y: 0, z: 2}, platform_yaw: 90, time: 2500}"
 ```
-> ℹ️**INFO**: You should execute this command before the armed PX4 times out. If this happens, ¡you will have to enable the controller manager to launch this command again.
+4. Now, you can enable the MpcController:
+```console
+foo@bar:~$ ros2 service call /mpc_controller/state_transition eagle_mpc_2_interfaces/srv/TransitionCommand "{command: enable}"
+```
 
 [Back to EagleMPC - ROS2 Control](README.md)
