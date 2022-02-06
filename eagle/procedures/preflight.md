@@ -1,5 +1,7 @@
 # Procedure to fly :helicopter:
-In case you are here to launch the systems for a simulation, you can skip to the [SITL simulation section](#2-simulation).
+
+- To operate with **real robots** [go here](#11-pre-flight-checklist)
+- To run a **simulation** [go here](#2-simulation).
 
 ## 1 Robot procedure
 ### 1.1 Pre-flight checklist
@@ -43,7 +45,7 @@ From the onboard computer do (you can connect it via SSH):
 2. Start the microRTPS agent. In a terminal from the onboard computer do: `./<path-to-ros2-ws>/install/px4_ros_com/bin/micrortps_agent -t UDP -i 192.168.0.3`.  The IP is the Pixhawk's IP.
 3. Check in a separate terminal that the data is being received, e.g. `ros2 topic echo /fmu/vehicle_angular_velocity/out`
 
-## 2 Simulation
+## 2 Simulation procedure
 Simulation based on the SITL provided by PX4. This should be changed by our own simulation environment.
 
 ### 2.1 Simulation launch
@@ -64,7 +66,7 @@ If it is not running, you can start it with:
 ```
 px4> mcirortps_client start -t UDP
 ```
-#### 1.3.2 Onboard computer side
+#### 2.2.2 Onboard computer side
 Start the microRTPS agent. In a terminal run the following command:
 
 ```console
@@ -76,7 +78,6 @@ foo@bar:~/$./<path-to-ros2-ws>/install/px4_ros_com/bin/micrortps_agent -t UDP
 ### 3.1 Launch a control node
 
  - For the control node available [see here](../eagle_mpc_2_control/README.md)
- - To launch the Control Manager Interface node [see here](../eagle_mpc_2_control/ctrl_mgr_interface.md)
 
 ### 3.2 ROS2 bag
 To record the data in ROS2:
