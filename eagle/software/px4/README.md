@@ -14,7 +14,7 @@ foo@bar:<path-to-px4-inst-folder/eagle-px4>$  git submodule update --init --recu
 foo@bar:<path-to-px4-inst-folder/eagle-px4>$  ./Tools/setup/ubuntu.sh
 ```
 
-> :warning: don't forget to reboot your pc before follow the next command
+> :warning: "Relogin or reboot computer before attempting to build NuttX targets"
 
 ### 1.1 Dependencies: FastDDS & Fast-RTPS-Gen
 
