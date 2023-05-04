@@ -12,7 +12,7 @@ We currently have two robots in our group:
 
 | Borinot | Solo12 |
 |:-:|:-:|
-| <a href="/borinot/README.md"><img src="/img/borinot.jpg" width="350"></a>| <a href="/solo12/README.md"><img src="/img/solo.png" width="350"></a> |
+| <a href="/borinot/README.md"><img src="/borinot/media/borinot.jpg" width="350"></a>| <a href="/solo12/README.md"><img src="/solo12/media/solo.png" width="350"></a> |
 | An open-source torque controlled Unmanned Aerial Manipulator designed for agile flying and contact loco-manipulation. | An open-source torque controlled Quadruped developped by the [Open Dynamic Robot Initiative](https://github.com/open-dynamic-robot-initiative). |
 
 Each robot folder contains documentation and software packages for the robot's hardware, software, and usage instructions.
