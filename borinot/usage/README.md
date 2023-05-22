@@ -14,6 +14,8 @@ In addition to the preflight safety checklist, this page also contains documenta
 
 The [optitrack.md](optitrack.md) file provides a procedure for fusing the position of the OptiTrack system with the PX4's EKF2 module.
 
+### [Borinot bringup](bringup.md)
+
 ### [Troubleshooting](troubleshooting.md)
 
 The [troubleshooting.md](troubleshooting.md) file contains a list of known issues and troubleshooting tips to help you quickly resolve problems that may arise during UAM operation.

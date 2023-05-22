@@ -1,12 +1,8 @@
 # Eagle - Software
 
-Below there is a list of software related to the operation of UAMs. Click on each one of them to know more.
+:warning: In construction :construction_worker:
 
-> :information_source: **NOTE**::information_source:
-> 
-> **Installation & Build** instructions: are places in the each repository's README file 
-> 
-> **Other information**: other information related such as, e.g, the architecture of the software is unified inside this documentation repository.
+Below there is a list of software related to the operation of UAMs. Click on each one of them to know more.
 
 ## 1. [EagleMPC](eagle_mpc_lib/README.md)
 
