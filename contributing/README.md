@@ -1,6 +1,7 @@
 # Contributing
 
 ## Work flow
+
 All the repos in the **Hidro** organization are governed by the following guidelines.
 
 1. All the repos have only 2 branches: `master` and `devel`.
@@ -11,6 +12,7 @@ All the repos in the **Hidro** organization are governed by the following guidel
 6. Pull requests (PRs) must be approved by one allowed organization member.
 
 ## Guidelines
+
 If you want to contribute, please follow these steps:
 
 1. Fork the repository you want to contribute to. Commits to `devel` and `master` are only done via PR. Besides, no other branches are allowed in the repositories.

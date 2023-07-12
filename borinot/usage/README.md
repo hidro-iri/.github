@@ -20,4 +20,4 @@ The [optitrack.md](optitrack.md) file provides a procedure for fusing the positi
 
 The [troubleshooting.md](troubleshooting.md) file contains a list of known issues and troubleshooting tips to help you quickly resolve problems that may arise during UAM operation.
 
-[Back to HOME](../README.md)
+[Back to Home](../profile/README.md)
