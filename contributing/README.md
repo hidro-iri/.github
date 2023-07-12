@@ -2,7 +2,7 @@
 
 ## Work flow
 
-All the repos in the **Hidro** organization are governed by the following guidelines.
+All the repos in the **HiDRo** organization are governed by the following guidelines.
 
 1. All the repos have only 2 branches: `master` and `devel`.
 2. The HEAD of `master` is at the last stable release.
