@@ -32,4 +32,4 @@ If you use Borinot in your research work, please cite the following paper:
 
 > :warning: **Put citing line**
 
-[Back to HiDRo Group](../README.md)
+[Back to HiDRo Group](../profile/README.md)
