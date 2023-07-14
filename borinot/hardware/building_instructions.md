@@ -10,7 +10,7 @@ The airframe is part of the upper body. In this step you will assemble the motor
 ### 3D preparation
 
 - cleaning 3D parts. Remove entirely the support inside the tube holder.
-- On one of the middle part, put nuts + screw + marker (follow the pose regarding the motor)
+- For each motor, assemble the marker (M4 nut + M4 nylon screw + M4 marker) (follow the pose regarding the motor):
 
 | Motor ID | Marker Position |
 |:-:|---|

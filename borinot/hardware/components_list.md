@@ -7,7 +7,7 @@
 ### Bill of Materials - Borinot
 
 | Part Name | Quantity | Comments | Section |
-|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|
 | [TMotor F90-1300KV](https://store.tmotor.com/goods.php?id=1064) | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
 | [TMotor F35A 6s](https://store.tmotor.com/goods.php?id=1176)    | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
 | O-ring Seals | 24 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
