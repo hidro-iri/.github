@@ -24,21 +24,13 @@ The airframe is part of the upper body. In this step you will assemble the motor
 - On the bottom part, put two inserts
 - Assemble the cache
 
-### Motor preparation
+### Motor wiring
 
 - cut phases cable around 5cm
 solder the male phase connector
 - put thermoretactile around each connector
 
-### Assembling
-
--Put motor top, middle and bottom together
-
-- with 4xM3x30 (Put the o-ring on the carbon tube and in the corresponding tube holder and motor)
-
-## Esc assembly
-
-### esc preparation
+### esc wiring
 
 - phase:
   - solder 5cm cable (from motor)
@@ -52,9 +44,9 @@ solder the male phase connector
 - signal:
   - solder ... cm cable (white for signal and black for ground)
 
-### Assembly
+### Assembling
 
+- Put motor top, middle and bottom together
+- ith 4xM3x30 (Put the o-ring on the carbon tube and in the corresponding tube holder and motor)
 - put esc in motor support
 - put cache with 2xM3x6
-
-##

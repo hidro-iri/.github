@@ -4,11 +4,11 @@
 
 ### 3D Printed Parts
 
-- Motor Case
-- Body Case
+- Motor Case (composed by a *top*, two *middles*, a *bottom* and a *cache*) - weight
+- Body Case (composed by a *top*, a *crown*, a *bottom* and two *tube holders S,M and L*)
 - Landing Gear
-- Controller Case
-- Arm
+- Controller Case (composed by a *top* and a *bottom*)
+- 2DOF Flying Arm
 
 ### Bill of Materials - Borinot
 
