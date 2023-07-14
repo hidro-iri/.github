@@ -1,8 +1,8 @@
-## Components list
+# Components List
 
-### Electronics
+## Electronics
 
-### 3D Printed Parts
+## 3D Printed Parts
 
 - Motor Case (composed by a *top*, two *middles*, a *bottom* and a *cache*) - weight
 - Body Case (composed by a *top*, a *crown*, a *bottom* and two *tube holders S,M and L*)
@@ -10,10 +10,10 @@
 - Controller Case (composed by a *top* and a *bottom*)
 - 2DOF Flying Arm
 
-### Bill of Materials - Borinot
+## Bill of Materials - Borinot
 
 | Part Name | Quantity | Comments | Section |
-|:-:|:-:|:-:|:-:|
+|:-|:-:|:-:|:-|
 | [Motor Cases](cad_files/motor_case/) | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
 | [Body Case](cad_files/body_case/) | 1 | | [Body Assembly](building_instructions.md#body-assembly) |
 | [Landing Gear](cad_files/landing_gear/) | 1 | | [Landing Gear Assembly](building_instructions.md#landing-gear-assembly) |
