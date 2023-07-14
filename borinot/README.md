@@ -1,14 +1,14 @@
-# Borinot 🚁
+# Borinot 🐝
 
-Borinot is an open-source Unmanned Aerial Manipulator (UAM) developed by the HiDRo group. It is a torque-controlled robot designed for hybrid flying and contact loco-manipulation. it's a unique platform that can achieve hybrid locomotion tasks combining aerial and ground movements, as well as manipulation tasks that require contact with the environment.
+Borinot is an open-source Unmanned Aerial Manipulator (UAM), developed by the HiDRo group. This torque-controlled robot is designed for hybrid flying and contact loco-manipulation. It utilizes its extremity as a tail for flying locomotion, a hand for agile aerial manipulation, or a leg for hybrid aerial-contact locomotion. Check out a demo of Borinot [here](<!-- Add video link -->).
 
 <!-- Quick section of the main software associate with it: eagle_mpc_lib -->
 
 ## Table of Contents
 
 - **[Hardware](hardware/README.md)**
+  - [Components List](hardware/components_list.md)
   - [Building Instructions](hardware/building_instructions.md)
-  - [Electronic Setup](hardware/electronic_setup.md)
 - **[Software](software/README.md)**
   - [MPC Controller](software/eagle_ros2/control/mpc_controller.md)
   - [Decentralized Controller](software/eagle_ros2/control/decentralized_controller.md)
@@ -31,5 +31,6 @@ To get started with Borinot, follow the instructions in the following directorie
 If you use Borinot in your research work, please cite the following paper:
 
 > :warning: **Put citing line**
+<!-- Put citation -->
 
 [Back to HiDRo Group](../profile/README.md)

@@ -1,0 +1,50 @@
+# Building Instructions
+
+The instructions are devide between the upper body (motor and base) and the lower body (landing gear and leg).
+
+## Motor Assembly
+
+The motors are part of the upper body. In this step you will assemble the motors to the motor case and the carbon fiber frame.
+> :warning: the motors are identified using the [Hexarotor X airframe reference](https://docs.px4.io/main/en/airframes/airframe_reference.html#hexarotor-x)
+
+### 3D preparation
+
+- cleaning 3D parts. Remove entirely the support inside the tube holder
+- On one of the middle part, put nuts + screw + marker (follo the pose regarding the motor)
+- On the bottom part, put two inserts
+- Assemble the cache
+
+### Motor preparation
+
+- cut phases cable around 5cm
+solder the male phase connector
+- put thermoretactile around each connector
+
+### Assembling
+
+-Put motor top, middle and bottom together
+
+- with 4xM3x30 (Put the o-ring on the carbon tube and in the corresponding tube holder and motor)
+
+## Esc assembly
+
+### esc preparation
+
+- phase:
+  - solder 5cm cable (from motor)
+  - solder female phase connectors
+  - put thermo around full connector
+- power:
+  - solder ...cm cable (red for + and black for minus)
+  - put thermo around cable (do not heat it)
+  - solder xt18 connector
+  - put thermo around connector (first heat the cable, after connector)
+- signal:
+  - solder ... cm cable (white for signal and black for ground)
+
+### Assembly
+
+- put esc in motor support
+- put cache with 2xM3x6
+
+##
