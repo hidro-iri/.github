@@ -1,16 +1,26 @@
 # Building Instructions
 
-The instructions are devide between the upper body (motor and base) and the lower body (landing gear and leg).
+The instructions are devide between the upper body (flying platform) and the lower body (landing gear and leg).
 
-## Motor Assembly
+## Airframe Assembly
 
-The motors are part of the upper body. In this step you will assemble the motors to the motor case and the carbon fiber frame.
+The airframe is part of the upper body. In this step you will assemble the motors and escs to the motor case and the carbon fiber frame.
 > :warning: the motors are identified using the [Hexarotor X airframe reference](https://docs.px4.io/main/en/airframes/airframe_reference.html#hexarotor-x)
 
 ### 3D preparation
 
-- cleaning 3D parts. Remove entirely the support inside the tube holder
-- On one of the middle part, put nuts + screw + marker (follo the pose regarding the motor)
+- cleaning 3D parts. Remove entirely the support inside the tube holder.
+- On one of the middle part, put nuts + screw + marker (follow the pose regarding the motor)
+
+| Motor ID | Marker Position |
+|:-:|---|
+| 1 | Bottom Right |
+| 2 | Top Right |
+| 3 | Top Left |
+| 4 | Bottom Left |
+| 5 | Top Right |
+| 6 | Bottom Right |
+
 - On the bottom part, put two inserts
 - Assemble the cache
 
