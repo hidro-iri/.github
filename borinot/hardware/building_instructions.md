@@ -50,3 +50,37 @@ solder the male phase connector
 - ith 4xM3x30 (Put the o-ring on the carbon tube and in the corresponding tube holder and motor)
 - put esc in motor support
 - put cache with 2xM3x6
+
+## Lower Body Assembly
+
+The Lower Body is composed by:
+
+- The landing gear,
+- The arm (which is composed by the the flying link, the odri link and the extremity),
+- The odri controller.
+
+## Landing Gear Assembly
+
+### Components list
+
+| Part Name | Quantity |
+|:-|:-:|
+| [Landing Gear - 3D Kit](cad_files/landing_gear/) | 1 |
+| Ø20mm O-Ring Seals | 12 |
+| M3x10mm Screws | 8 |
+| M3x16mm Screws | 8 |
+| M3 Nuts | 16 |
+| Ø8mmx6mmx110.0mm Carbon Fiber Round Checked Tubes | 4 |
+| Ø8mmx6mmx170.0mm Carbon Fiber Round Checked Tubes | 2 |
+| Ø8mmx6mmx300.0mm Carbon Fiber Round Checked Tubes | 2 |
+
+### 3D Preparation
+
+- :warning: Clean the 3D Kit (If you have difficulties to insert a tube inside one of the 3d prints, you should clean the entry)
+- Insert
+- For each part of the **Landing Gear - 3D Kit**, insert the **M3 Nuts** inside the corresponding emplacement.
+- For each **pawn**, put 3 **Ø20mm O-Ring Seals** around it.
+
+### Assembly
+
+- First assemble the foots and the pawn with the 300mm CF tube following the picture. Do it 2 times.

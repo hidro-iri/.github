@@ -5,6 +5,9 @@
 - NUC i7
 - PixHawk5
 - TMotor F35A 6s
+- [Master board](https://github.com/open-dynamic-robot-initiative/master-board#master-board) from [ODRI](https://github.com/open-dynamic-robot-initiative)
+- [Micro Driver](https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware/tree/master/electronics/micro_driver_electronics) from [ODRI](https://github.com/open-dynamic-robot-initiative)
+- [Actuator Module](https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware/blob/master/mechanics/actuator_module_v1/README.md) from [ODRI](https://github.com/open-dynamic-robot-initiative)
 
 ## 3D Printed Parts
 
@@ -44,3 +47,7 @@
 | ø8mmx352.5mm Carbon Fiber Round Checked Tubes | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
 | **...**mm Bullet Connector Sets | 18 | | [Airframe Assembly](building_instructions.md#airframe-assembly) | <!--Connectors-->
 | [**...**mm M4 Markers](https://optitrack.com/accessories/markers/#mcm-12.7-m4-10) | 11 | | [Airframe Assembly](building_instructions.md#airframe-assembly) & [Body Assembly](building_instructions.md#body-assembly)| <!--Others-->
+
+# Lower Body
+
+## Electronics
