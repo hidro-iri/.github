@@ -1,8 +1,10 @@
-# Hardware
+# Borinot: Hardware Assembly Guide
 
-This folder contains the following:
+Contents:
 
-- [**Components List**](components_list.md): A detailed inventory of all the hardware components required for the project. This list provides information about the specific items needed to assemble and complete the project.
-- [**Building Instructions**](building_instructions.md): Step-by-step instructions for the assembly and construction process. These instructions guide you through the proper sequence of steps to successfully build and set up the hardware components.
+- [**Upper Body**](upper_body.md) - Guide to assemble the Borinot Upper Body.
+- [**Lower Body**](lower_body.md) - Guide to assemble the Borinot Lower Body.
+- [**Components List**](components_list.md) - Details of all hardware components required for the project.
+- [**Building Instructions**](building_instructions.md) - Step-by-step instructions for the assembly and construction of hardware components.
 
-[Back to Borinot](../README.md)
+[Back to Borinot Main Page](../README.md)

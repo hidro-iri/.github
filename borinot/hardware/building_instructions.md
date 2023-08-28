@@ -1,19 +1,21 @@
 # Building Instructions
 
-The instructions are devide between the upper body (flying platform) and the lower body (landing gear and leg).
+This guide provides comprehensive assembly instructions for our airframe. The assembly process is divided into two main sections: the upper body (flying platform) and the lower body (landing gear and leg). Before you begin, ensure you have the necessary tools at hand.
 
-## Airframe Assembly
+## Airframe Assembly (Upper Body)
 
-The airframe is part of the upper body. In this step you will assemble the motors and escs to the motor case and the carbon fiber frame.
-> :warning: the motors are identified using the [Hexarotor X airframe reference](https://docs.px4.io/main/en/airframes/airframe_reference.html#hexarotor-x)
+The airframe, which is part of the upper body, comprises the motors, ESCs (Electronic Speed Controllers), motor case, and the carbon fiber frame.
 
-### 3D preparation
+> :warning: **Note**: Motor identification is crucial. Please refer to the [Hexarotor X airframe reference](https://docs.px4.io/main/en/airframes/airframe_reference.html#hexarotor-x) to correctly identify each motor.
 
-- cleaning 3D parts. Remove entirely the support inside the tube holder.
-- For each motor, assemble the marker (M4 nut + M4 nylon screw + M4 marker) (follow the pose regarding the motor):
+### 3D Preparation
 
+1. Clean all 3D printed parts thoroughly.
+2. Ensure all support structures, especially those inside the tube holder, are completely removed.
+3. Assemble the motor marker as follows for each motor:
+   
 | Motor ID | Marker Position |
-|:-:|---|
+|:-:|:-:|
 | 1 | Bottom Right |
 | 2 | Top Right |
 | 3 | Top Left |
@@ -21,76 +23,69 @@ The airframe is part of the upper body. In this step you will assemble the motor
 | 5 | Top Right |
 | 6 | Bottom Right |
 
-- On the bottom part, put two inserts
-- Assemble the cache
+4. Attach two inserts to the bottom part.
+5. Complete the assembly of the motor cache.
 
-### Motor wiring
+### Motor Wiring
 
-- cut phases cable around 5cm
-solder the male phase connector
-- put thermoretactile around each connector
+1. Cut phase cables to a length of 5cm.
+2. Solder the male phase connector.
+3. Cover each connector with heat shrink tubing.
 
-### esc wiring
+### ESC Wiring
 
-- phase:
-  - solder 5cm cable (from motor)
-  - solder female phase connectors
-  - put thermo around full connector
-- power:
-  - solder ...cm cable (red for + and black for minus)
-  - put thermo around cable (do not heat it)
-  - solder xt18 connector
-  - put thermo around connector (first heat the cable, after connector)
-- signal:
-  - solder ... cm cable (white for signal and black for ground)
+For the phase:
+1. Solder a 5cm cable from the motor.
+2. Attach the female phase connectors.
+3. Place heat shrink tubing around the full connector.
 
-### Assembling
+For power:
+1. Solder a 20cm cable, using red for positive (+) and black for negative (-).
+2. Place heat shrink tubing around the cable (do not heat yet).
+3. Attach the XT18 connector.
+4. Heat the tubing around the cable first, followed by the connector.
 
-- Put motor top, middle and bottom together
-- ith 4xM3x30 (Put the o-ring on the carbon tube and in the corresponding tube holder and motor)
-- put esc in motor support
-- put cache with 2xM3x6
+For signal:
+1. Solder a 30cm cable using white for the signal and black for ground.
+
+### Final Assembly
+
+1. Combine the motor's top, middle, and bottom parts.
+2. Secure using 4xM3x30 screws. Ensure the o-ring is positioned on the carbon tube, fitting inside the tube holder and motor.
+3. Install the ESC within the motor support.
+4. Secure the motor cache with 2xM3x6 screws.
 
 ---
 
 ## Lower Body Assembly
 
-The Lower Body is composed by:
+The lower body consists of:
+- Landing gear
+- Arm (comprising the flying link, ODRI link, and extremity)
+- ODRI controller.
 
-- The landing gear,
-- The arm (which is composed by the the flying link, the odri link and the extremity),
-- The odri controller.
+### Arm Assembly - Extremity
 
----
-
-## Arm Assembly - Extremity
-
-### Components list
+#### Components List
 
 | Part Name | Quantity |
-|:-|:-:|
+|:-:|:-:|
 | [Extremity - 3D Kit](CAD/limbs/) | 1 |
 
-### 3D Preparation
+1. Thoroughly clean the extremity part.
 
-- Clean the extremity part
+### Arm Assembly - ODRI Link
 
----
+Refer to the [actuator module page](https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware/blob/master/mechanics/actuator_module_v1/README.md#brushless-actuator-module-core-v1) of the ODRI project for assembly details.
 
-## Arm Assembly - ODRI link
+### Arm Assembly - Flying Link
 
-This section is cover by the [actuator module page](https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware/blob/master/mechanics/actuator_module_v1/README.md#brushless-actuator-module-core-v1) of the ODRI project.
-
----
-
-## Arm Assembly - Flying link
-
-### Components List
+#### Components List
 
 | Part Name | Quantity |
-|:-|:-:|
+|:-:|:-:|
 | [Flying link - 3D Kit](CAD/limb/) | 1 |
-| Ouput Bearings | 2 |
+| Output Bearings | 2 |
 | Transmission Bearings | 3 |
 | M3x5mm flat head Screws | 4 |
 | M3x15mm Screw | 4 |
@@ -101,33 +96,30 @@ This section is cover by the [actuator module page](https://github.com/open-dyna
 | M3 Nuts | 18 |
 | M3 Inserts | 2 |
 
-### 3D Preparation
+#### 3D Preparation
 
-- :warning: Clean the 3D Kit.
-- For each part of the **Flying - 3D Kit**, insert the **M3 Nuts** inside the corresponding emplacements.
-- For each part of the **Flying - 3D Kit**, insert the **M3 Inserts** inside the corresponding emplacements.
-- For each part of the **Flying - 3D Kit**, insert the **Ouput Bearings** inside the corresponding emplacements.
-- For each part of the **Flying - 3D Kit**, insert the **Transmission Bearings** inside the corresponding emplacements.
+1. Clean the **Flying - 3D Kit** components thoroughly.
+2. Insert **M3 Nuts**, **M3 Inserts**, **Output Bearings**, and **Transmission Bearings** in their corresponding slots in the 3D kit components.
 
-### Assembly
+#### Assembly
 
-- Put the motor inside the flying case A and maintain it with 4 screws.
-- Put the 150mm timing belt arround the motor ax.
-- Put the encoder next to the motor and maintain it using the nylon screws.
-- Put the odri 3D part with the 201mm timing belt and close using the flying case B and the 6 20mm screws.
-- Put the odri link and the extremity. fix it using the 15mm screws.
+1. Secure the motor within the flying case A using 4 screws.
+2. Position the 150mm timing belt around the motor's axle.
+3. Install the encoder adjacent to the motor, and secure with nylon screws.
+4. Place the ODRI 3D component, aligned with the 201mm timing belt. Close using flying case B and 6x20mm screws.
+5. Attach the ODRI link and the extremity, securing with 15mm screws.
 
 ---
 
-## Odri Controller Assembly
+## ODRI Controller Assembly
 
-### Components List
+#### Components List
 
 | Part Name | Quantity |
-|:-|:-:|
+|:-:|:-:|
 | [Controller Case - 3D Kit](CAD/platform/) | 1 |
-| master board | 1 |
-| micro driver | 1 |
+| Master Board | 1 |
+| Micro Driver | 1 |
 | M2 Nuts | 4 |
 | M2.5 Nuts | 4 |
 | M3 Inserts | 3 |
@@ -135,28 +127,26 @@ This section is cover by the [actuator module page](https://github.com/open-dyna
 | M2x6mm Screws | 4 |
 | M2.5x6mm Screws | 4 |
 
-### 3D Preparation
+#### 3D Preparation
 
-- :warning: Clean the 3D Kit
-- For each part of the **Controller Case - 3D Kit**, insert the **M2 Nuts** inside the corresponding emplacements.
-- For each part of the **Controller Case - 3D Kit**, insert the **M3 Nuts** inside the corresponding emplacements.
-- For each part of the **Controller Case - 3D Kit**, insert the **M3 Inserts** inside the corresponding emplacements.
+1. Clean all parts of the **Controller Case - 3D Kit**.
+2. Insert **M2 Nuts**, **M2.5 Nuts**, and **M3 Inserts** in their designated slots in the 3D kit components.
 
-### Assembly
+#### Assembly
 
-- Put the master boar inside the controller case - top. Maintain it with the M2 screws.
-- Put the micro driver inside the controller case - bottom. Maintain it with the M2.5 screws.
-- Connect the two links with the micro driver (the cable should pass throught the hole of the controller case and the flying case).
-- Connect the micro driver and the master board, and close the case with 3 M3 screw.
+1. Secure the master board inside the controller case - top using M2 screws.
+2. Mount the micro driver at the bottom of the controller case, securing with M2.5 screws.
+3. Connect the two links to the micro driver. Ensure the cable routes through the designated holes in both the controller and flying cases.
+4. Establish a connection between the micro driver and the master board. Close the assembly using 3 M3 screws.
 
 ---
 
 ## Landing Gear Assembly
 
-### Components list
+#### Components List
 
 | Part Name | Quantity |
-|:-|:-:|
+|:-:|:-:|
 | [Landing Gear - 3D Kit](CAD/legs/) | 1 |
 | Ø20mm O-Ring Seals | 12 |
 | M3x10mm Screws | 8 |
@@ -166,14 +156,18 @@ This section is cover by the [actuator module page](https://github.com/open-dyna
 | Ø8mmx6mmx170.0mm Carbon Fiber Round Checked Tubes | 2 |
 | Ø8mmx6mmx300.0mm Carbon Fiber Round Checked Tubes | 2 |
 
-### 3D Preparation
+#### 3D Preparation
 
-- :warning: Clean the 3D Kit (If you have difficulties to insert a tube inside one of the 3d prints, you should clean the entry)
-- For each part of the **Landing Gear - 3D Kit**, insert the **M3 Nuts** inside the corresponding emplacements.
-- For each **pawn**, put 3 **Ø20mm O-Ring Seals** around it.
+1. Clean all components of the **Landing Gear - 3D Kit**. Ensure that tube entry points are clear of any obstructions.
+2. Insert **M3 Nuts** in their specified slots.
+3. Place 3 **Ø20mm O-Ring Seals** around each pawn.
 
-### Assembly
+#### Assembly
 
-- First assemble the wye connectors and the pawns with the 300mm CF tube following the picture. Do it 2 times.
-- Assemble the cross-block connectors with the 170mm CF tube following the picture. Do it 2 times.
-- Assemble the all together using the 4 110mm CF tubes following the picture.
+1. Join the wye connectors and pawns with the 300mm carbon fiber tubes. Ensure alignment with provided pictures (or diagrams). Repeat the step for the second set.
+2. Combine the cross-block connectors with the 170mm carbon fiber tubes, following reference images. Create two such assemblies.
+3. Integrate the entire setup using the 4 110mm carbon fiber tubes, ensuring alignment with provided pictures (or diagrams).
+
+---
+
+We hope this assembly guide provides clarity for constructing the airframe. For any questions or additional support, please contact our technical team.

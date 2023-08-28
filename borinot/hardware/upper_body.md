@@ -5,7 +5,7 @@
 > *Assembled Upper Body, [**weight**] g*
 <!-- Make sure to provide the actual weight once known -->
 
-The Upper Body of Borinot acts as a flying platform, similar to a hexacopter. It consists of the main body (which houses essential electronics like the onboard NUC computer, the Pixhawk flight controller, and the power module) and the airframe. This structure keeps the motors in their respective positions. The Upper Body can operate as a standalone hexacopter or be integrated into the Lower Body for expanded functionalities.
+The Upper Body of Borinot acts as a flying platform, similar to a hexacopter. It consists of the main body which accommodates core electronics like the onboard NUC computer, the Pixhawk flight controller, and the power module, as well as the airframe that ensures the stable positioning of the motors. The Upper Body can operate as a standalone hexacopter or be integrated into the Lower Body for expanded functionalities.
 
 ---
 
@@ -30,7 +30,7 @@ The Upper Body of Borinot acts as a flying platform, similar to a hexacopter. It
 | Airframe | 1 | Assembled structure | [Airframe Assembly Guide](airframe.md) |
 | Power Module | 1 | Essential power component | [Power Module Modification Guide](power_module.md) |
 
-> :warning: Note: While Pixhawk 5x is discontinued, Pixhawk 6x is mechanically compatible. However, ensure to test the software compatibility.
+> :warning: Please note that While the Pixhawk 5x has been discontinued, the Pixhawk 6x is mechanically compatible. However, Ensure software compatibility before proceeding.
 
 ## Assembly
 
@@ -47,10 +47,23 @@ Ensure the main body case and associated components are ready for assembly:
 
 - **Clean the 3D printed parts.** Ensure there are no residual supports or anomalies.
     > :warning: Pay special attention to the marker holders and fastener holders.
+
+<img src="../media/pixhawk_case_preparation_2.png" alt="" width="350"/>
+<img src="../media/pixhawk_case_preparation_3.png" alt="" width="350"/>
+<img src="../media/pixhawk_case_preparation_4.png" alt="" width="350"/>
+
 - **Install the M3 nuts and dampers onto the Pixhawk case.**
 - **Insert the 65mm square carbon fiber tubes into the Pixhawk case.**
 - **Attach the battery support to the Pixhawk case using M3 10mm screws.**
+
+<img src="../media/mainbody_preparation_1.png" alt="" width="350"/>
+<img src="../media/mainbody_preparation_2.png" alt="" width="350"/>
+
 - **Position the M3 nuts and dampers on the top part of the main body case.**
+
+<img src="../media/mainbody_preparation_3.png" alt="" width="350"/>
+<img src="../media/mainbody_preparation_4.png" alt="" width="350"/>
+
 - **Place the M3 nuts on the bottom part of the main body case.**
 
 ### Part 2: Main Body Assembly
@@ -58,8 +71,16 @@ Ensure the main body case and associated components are ready for assembly:
 The main body requires careful placement and connection of components:
 
 - **Attach the Wi-Fi antenna to the Pixhawk case using fasteners.**
+
+<img src="../media/mainbody_preparation_6.png" alt="" width="350"/>
+<img src="../media/mainbody_preparation_7.png" alt="" width="350"/>
+
 - **Mount the power module onto the top part of the main body using 4 M3 6mm screws.**
 - **Secure the Ethernet adapter and radio receiver to the top part using fasteners.**
+
+<img src="../media/mainbody_preparation_8.png" alt="" width="350"/>
+<img src="../media/mainbody_preparation_9.png" alt="" width="350"/>
+
 - **Place the Pixhawk 5x inside its designated case.**
 - **Guide the cables of the Pixhawk and the antenna through the corresponding holes in the top part.**
 - **Secure the Pixhawk case to the top part using fasteners.**
@@ -67,10 +88,13 @@ The main body requires careful placement and connection of components:
 - **Connect the NUC to the Wi-Fi antenna.**
 - **Position the bottom part of the main body inside the contour part.**
 - **Insert the 150mm square carbon fiber tubes into the top and bottom parts of the main body case.**
-- **Place the NUC inside the main body case and secure it to the bottom part using 4 M3 16mm screws.**
-- **Establish connections:**
-  - **Connect the Pixhawk 5x Ethernet cable to the NUC.**
-  - **Connect the Pixhawk 5x power cable to the power module.**
-  - **Connect the Pixhawk 5x USB cable to the NUC using the USB C cable.**
 
-Ensure all components are secured and all connections are verified before moving to the next stages of your project.
+<img src="../media/mainbody_preparation_5.png" alt="" width="350"/>
+
+- **Place the NUC inside the main body case and secure it to the bottom part using 4 M3 16mm screws.**
+- **Connect all necessary cables**:
+  - **Pixhawk 5x Ethernet to the NUC.**
+  - **Pixhawk 5x power to the power module.**
+  - **Pixhawk 5x USB to the NUC using the provided USB C cable.**
+
+Ensure all connections are secure before proceeding with the next step.
