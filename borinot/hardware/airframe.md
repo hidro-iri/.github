@@ -17,7 +17,7 @@ The airframe is the structure that houses and maintains the motors in their resp
 | Motor Cases | 6 | 3D parts - Motor Holder | [CAD](CAD/platform/) |
 | Carbon Fiber Tubes | 6 | ø8mmx352.5mm, Round Checked | [McMaster](https://www.mcmaster.com/products/carbon-fiber-tubing/) |
 | O-ring Seals | 24 | ø [**diameter**] mm | [TheORingStore](https://www.theoringstore.com/store/) |
-| M4 Marker | 6 | 12.7 mm M4 | [Optitrack](https://optitrack.com/accessories/markers/#mcm-12.7-m4-10) |
+| M4 Marker | 6 | 14 mm M4 | [Optitrack](https://optitrack.com/accessories/markers/#mcm-14.0-m4-10) |
 | M4 Nuts | 6 | M4 | [**Insert Proper Link**] |
 | M4 Screws | 6 | M4x10mm Nylon | [**Insert Proper Link**] |
 | M3 Inserts | 12 | M3 | [**Insert Proper Link**] |
